@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <h1>Music Player <br>
+        by Lucas Camargo
+    </h1>
+
+    <div class="container">
+        <div class="player">
+            <audio id="audio-player"></audio>
+
+            <h2 id="music-name" class="music-name"></h2>
+            <p id="music-autor" class="music-autor"></p>
+
+            <div class="player-progress">
+                <div class="progress-values">
+                    <span id="player-current-time">--:--</span>
+                    <span id="player-duration">--:--</span>
+                </div>
+                <progress id="player-progress"></progress>
+            </div>
+
+            <div class="player-buttons">
+                <button id="btn-prev" class="btn btn-prev">
+                    <i class="fa-solid fa-backward"></i>
+                </button>
+                    <button id="btn-play" class=" btn btn-play"><i id="btn-play-icon" class="fa-solid fa-play"></i>
+                    <button id="btn-pause" class="btnPause"><i id="btn-pause-icon" class="fa-solid fa-pause"></i></button>
+                </button>
+                <button id="btn-next" class="btn btn-next">
+                    <i class="fa-solid fa-forward"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h4>
+            Feito por Lucas Camargo<br>
+            <a href="https://github.com/Luck1nh4/" target="_blank"> GitHub from Luck1nh4</a>
+        </h4>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
