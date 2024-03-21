@@ -25,7 +25,7 @@ const musics = [
 {
     name: "Sky Full Of Stars",
     author: "ColdPlay",
-    path: "./music/ColdPlay - Sky Full of Stars.mp3"
+    path: "./music/ColdPlay - Sky Full Of Stars.mp3"
 },
 {
     name: "Echo",
