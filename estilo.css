@@ -36,7 +36,7 @@ h1, h4{
 
 .player{
     width: 480px;
-    padding: 48px 64px;
+    padding: 20px 64px;
     border-radius: 36px;
     background: #d6d8ce;
     box-shadow: 0px 1px 52px #444242af, -8px -5px 52px #75707098;
@@ -44,7 +44,7 @@ h1, h4{
 
 .player .music-name{
     margin: 0;
-    margin-bottom: 8px;
+    margin-top: 25px;
     text-align: center;
     color: #0658aa;
 }
@@ -207,19 +207,47 @@ h1, h4{
 
 @media (max-width: 768px){
     .player{
-        width: 100%;
+        width: 60%;
         box-shadow: none;
         padding: 24px;
     }
 
-    .player .player-buttons .btn{
+    .player .player-buttons .btn.btn-next, .player .player-buttons .btn.btn-prev{
         width: 42px;
         height: 42px;
     }
 
-    .player .player-buttons .btn.btn-play{
-        width: 64px;
-        height: 64px;
+    .player .player-buttons .btn.btn-play,.player .player-buttons .btnPause{
+        width: 54px;
+        height: 54px;
     }
 }
 
+.btnVolume i{
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 4px;
+    background: linear-gradient(to right, #5232c1, #15f1f1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 19px;
+    cursor: pointer;
+    
+}
+.btnVolume{
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 40px 10px;
+    padding-bottom: 0;
+}
+
+.volume{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnVolume i:hover{
+    transform: scale(1.09);
+}

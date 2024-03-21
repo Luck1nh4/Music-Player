@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,12 @@
     <title>Music Player</title>
     <link rel="stylesheet" href="estilo.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
 
     <h1>Music Player <br>
@@ -35,12 +39,17 @@
                 <button id="btn-prev" class="btn btn-prev">
                     <i class="fa-solid fa-backward"></i>
                 </button>
-                    <button id="btn-play" class=" btn btn-play"><i id="btn-play-icon" class="fa-solid fa-play"></i>
-                    <button id="btn-pause" class="btnPause"><i id="btn-pause-icon" class="fa-solid fa-pause"></i></button>
+                <button id="btn-play" class=" btn btn-play"><i id="btn-play-icon" class="fa-solid fa-play"></i>
+                    <button id="btn-pause" class="btnPause"><i id="btn-pause-icon"
+                            class="fa-solid fa-pause"></i></button>
                 </button>
                 <button id="btn-next" class="btn btn-next">
                     <i class="fa-solid fa-forward"></i>
                 </button>
+            </div>
+            <div class="volume">
+                <button id="btn-volume-down" class="btnVolume"><i class="fa-solid fa-volume-low"></i></button>
+                <button id="btn-volume-up" class="btnVolume" ><i class="fa-solid fa-volume-high"></i></button>
             </div>
         </div>
     </div>
@@ -53,4 +62,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
